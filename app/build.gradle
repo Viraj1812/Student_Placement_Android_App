@@ -45,5 +45,9 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     implementation 'com.intuit.ssp:ssp-android:1.1.0'
 
+    //PostgreSQL JDBC Driver Dependency
+    implementation 'org.postgresql:postgresql:42.2.5'
+
+
 
 }
