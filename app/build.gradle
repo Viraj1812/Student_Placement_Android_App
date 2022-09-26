@@ -18,10 +18,15 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -48,6 +53,9 @@ dependencies {
 
     //PostgreSQL JDBC Driver Dependency
     implementation("org.postgresql:postgresql:42.2.9.jre7")
+/*
+    //bottom navigation
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'*/
 
 
 
