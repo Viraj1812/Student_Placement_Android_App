@@ -3,9 +3,7 @@ package com.example.studentplacementandroidapp.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.studentplacementandroidapp.R
 import com.example.studentplacementandroidapp.databinding.ActivityLoginBinding
-import com.example.studentplacementandroidapp.databinding.ActivityMainBinding
 
 class LoginActivity : AppCompatActivity() {
 
@@ -16,9 +14,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        /*binding.signInCard.setOnClickListener{
+        binding.signInCard.setOnClickListener{
             val intent = Intent(this@LoginActivity,RegistrationActivity::class.java)
             startActivity(intent)
-        }*/
+        }
     }
 }
