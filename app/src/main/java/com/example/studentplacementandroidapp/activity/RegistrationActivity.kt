@@ -2,6 +2,8 @@ package com.example.studentplacementandroidapp.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import com.example.studentplacementandroidapp.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {
@@ -12,5 +14,12 @@ class RegistrationActivity : AppCompatActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        binding.llNext1.setOnClickListener{
+            binding.llRegistrationForm1.visibility = GONE
+            binding.llNext1.visibility = GONE
+            binding.llRegistrationForm2.visibility = VISIBLE
+            binding.llNext2.visibility = VISIBLE
+        }
     }
 }

@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/llRegistrationForm"
+        android:id="@+id/llRegistrationForm1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/llRegistration"
@@ -56,7 +56,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
             android:fontFamily="@font/inter_regular"
-            android:hint="@string/student_id"
+            android:hint="@string/first_name"
             android:textColorHint="#9FA1AA"
             android:backgroundTint="#9FA1AA"
             android:importantForAutofill="no"
@@ -73,7 +73,7 @@
             android:fontFamily="@font/inter_regular"
             android:textColorHint="#9FA1AA"
             android:backgroundTint="#9FA1AA"
-            android:hint="@string/student_id"
+            android:hint="@string/last_name"
             android:importantForAutofill="no"
             android:inputType="text"
             android:padding="@dimen/_3sdp"
@@ -103,7 +103,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
             android:fontFamily="@font/inter_regular"
-            android:hint="@string/student_id"
+            android:hint="@string/email_id"
             android:importantForAutofill="no"
             android:inputType="text"
             android:padding="@dimen/_3sdp"
@@ -116,7 +116,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
             android:fontFamily="@font/inter_regular"
-            android:hint="@string/student_id"
+            android:hint="@string/mobile_number"
             android:textColorHint="#9FA1AA"
             android:backgroundTint="#9FA1AA"
             android:importantForAutofill="no"
@@ -133,7 +133,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
             android:fontFamily="@font/inter_regular"
-            android:hint="@string/student_id"
+            android:hint="@string/city"
             android:importantForAutofill="no"
             android:inputType="text"
             android:padding="@dimen/_3sdp"
@@ -148,7 +148,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_5sdp"
             android:fontFamily="@font/inter_regular"
-            android:hint="@string/student_id"
+            android:hint="@string/department"
             android:importantForAutofill="no"
             android:inputType="text"
             android:padding="@dimen/_3sdp"
@@ -156,10 +156,169 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/llNext"
+        android:id="@+id/llRegistrationForm2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llRegistrationForm"
+        android:layout_below="@id/llRegistration"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:background="@drawable/rec_bg"
+        android:foregroundGravity="center"
+        android:gravity="top"
+        android:visibility="gone"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/inter_regular"
+            android:hint="@string/_10th_percentage"
+            android:textColorHint="#9FA1AA"
+            android:backgroundTint="#9FA1AA"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="@dimen/_3sdp"
+            android:textColor="#9FA1AA" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/inter_regular"
+            android:textColorHint="#9FA1AA"
+            android:backgroundTint="#9FA1AA"
+            android:hint="@string/_12th_percentage"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="@dimen/_3sdp"
+            android:textColor="#9FA1AA" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColorHint="#9FA1AA"
+            android:backgroundTint="#9FA1AA"
+            android:fontFamily="@font/inter_regular"
+            android:hint="@string/diploma_cgpa"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="@dimen/_3sdp"
+            android:textColor="#9FA1AA" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColorHint="#9FA1AA"
+            android:backgroundTint="#9FA1AA"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/inter_regular"
+            android:hint="@string/current_cgpa"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="@dimen/_3sdp"
+            android:textColor="#9FA1AA" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/inter_regular"
+            android:hint="@string/domain"
+            android:textColorHint="#9FA1AA"
+            android:backgroundTint="#9FA1AA"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="@dimen/_3sdp"
+            android:textColor="#9FA1AA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:backgroundTint="#9FA1AA"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_14sdp"
+                android:textColorHint="#9FA1AA"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/resume"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/_3sdp"
+                android:textColor="#9FA1AA" />
+
+            <ImageView
+                android:id="@+id/uploadResume"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_baseline_arrow_circle_down_24"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:backgroundTint="#9FA1AA"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_14sdp"
+                android:textColorHint="#9FA1AA"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/internship_letter"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/_3sdp"
+                android:textColor="#9FA1AA" />
+
+            <ImageView
+                android:id="@+id/uploadInternshipLetter"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_baseline_arrow_circle_down_24"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRegistrationForm1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="@dimen/_7sdp"
@@ -190,6 +349,48 @@
                 android:paddingEnd="@dimen/_25sdp"
                 android:paddingBottom="@dimen/_7sdp"
                 android:text="@string/next_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llRegistrationForm2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:backgroundTint="@color/black"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:paddingStart="@dimen/_25sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:text="@string/submit"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15sdp" />
 
