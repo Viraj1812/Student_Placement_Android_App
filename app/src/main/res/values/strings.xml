@@ -23,4 +23,17 @@
     <string name="last_name">Last Name</string>
     <string name="email_id">Email Id</string>
     <string name="first_name">First Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="todo">TODO</string>
+    <string name="hi_user">Hi, User</string>
+    <string name="configure_your_setiings">Configure your setiings</string>
+    <string name="your_watchlist">Your watchlist</string>
+    <string name="view_companies_you_like">View companies you like</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About Us</string>
 </resources>

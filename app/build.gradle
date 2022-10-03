@@ -53,10 +53,12 @@ dependencies {
 
     //PostgreSQL JDBC Driver Dependency
     implementation("org.postgresql:postgresql:42.2.9.jre7")
-/*
-    //bottom navigation
-    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'*/
 
+    //bottom navigation
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+
+
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
 
 
 }

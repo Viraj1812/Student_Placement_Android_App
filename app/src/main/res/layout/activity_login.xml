@@ -37,7 +37,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/inter_semibold"
             android:gravity="center"
-            android:textColor="#9FA1AA"
+            android:textColor="@color/secText"
             android:text="@string/access_to_your_account"
             android:textSize="@dimen/_15sdp" />
 

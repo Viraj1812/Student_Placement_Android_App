@@ -10,6 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        //add this line
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "Student Placement Android App"

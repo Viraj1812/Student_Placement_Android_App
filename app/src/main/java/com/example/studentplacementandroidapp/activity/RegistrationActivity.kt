@@ -1,5 +1,6 @@
 package com.example.studentplacementandroidapp.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View.GONE
@@ -20,6 +21,11 @@ class RegistrationActivity : AppCompatActivity() {
             binding.llNext1.visibility = GONE
             binding.llRegistrationForm2.visibility = VISIBLE
             binding.llNext2.visibility = VISIBLE
+        }
+
+        binding.llNext2.setOnClickListener{
+            val intent = Intent(this@RegistrationActivity,MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
