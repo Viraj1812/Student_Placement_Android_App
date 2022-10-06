@@ -37,4 +37,7 @@
     <string name="logout">Logout</string>
     <string name="about_us">About Us</string>
     <string name="date">date</string>
+    <string name="exit_msg">Are you sure you want to exit?</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
 </resources>

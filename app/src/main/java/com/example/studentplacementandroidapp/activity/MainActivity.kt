@@ -2,6 +2,7 @@ package com.example.studentplacementandroidapp.activity
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.studentplacementandroidapp.R
@@ -47,6 +48,10 @@ class MainActivity : AppCompatActivity(), ProfileFragment.ProfileFragmentInterfa
 
     }
 
+    override fun onBackPressed() {
+        showExitAlertDialog()
+    }
+
     private fun loadFragment(fragment: Fragment?) {
         fragment?.let {
             supportFragmentManager
@@ -59,5 +64,25 @@ class MainActivity : AppCompatActivity(), ProfileFragment.ProfileFragmentInterfa
     override fun selectHomeTabFromProfileFragment(fragment: Fragment) {
         binding.bottomNavigation.itemActiveIndex = 0
         loadFragment(fragment)
+    }
+
+    private fun showExitAlertDialog() {
+        val alertDialog: AlertDialog.Builder = AlertDialog.Builder(this, R.style.AlertDialogCustom)
+        alertDialog.setCancelable(false)
+        alertDialog.setTitle(resources.getString(R.string.app_name))
+        alertDialog.setMessage(resources.getString(R.string.exit_msg))
+
+        alertDialog.setPositiveButton(
+            resources.getString(R.string.exit)
+        ) { p0, p1 ->
+            finishAffinity()
+        }
+        alertDialog.setNegativeButton(
+            resources.getString(R.string.cancel)
+        ) { p0, p1 ->
+            p0?.dismiss()
+        }
+
+        alertDialog.show()
     }
 }

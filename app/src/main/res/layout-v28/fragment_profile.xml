@@ -69,6 +69,7 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/editProfile"
             android:layout_width="@dimen/_130sdp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_8sdp"
@@ -88,6 +89,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/aboutUs"
             android:layout_width="@dimen/_130sdp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_8sdp"
@@ -107,6 +109,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/logout"
             android:layout_width="@dimen/_130sdp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_8sdp"
