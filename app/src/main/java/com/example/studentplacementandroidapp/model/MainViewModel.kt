@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 class MainViewModel(private val repository: Repository) : ViewModel() {
 
     val myResponseOfStudentData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
-    val myResponseOfCompanyData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
+    val myResponseOfCompanyData: MutableLiveData<DBCompanyData> = MutableLiveData()
     val myResponseOfStudentSaveCompanyData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
     val myResponseOfStudentSaveData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
 
@@ -22,7 +22,7 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
 
     fun getCompanyData(){
         viewModelScope.launch {
-            val response: DBStudentDataResult = repository.getCompanyData()
+            val response: DBCompanyData = repository.getCompanyData()
             myResponseOfCompanyData.value = response
         }
     }

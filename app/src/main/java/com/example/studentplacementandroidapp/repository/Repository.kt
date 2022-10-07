@@ -1,6 +1,7 @@
 package com.example.studentplacementandroidapp.repository
 
 import com.example.studentplacementandroidapp.api.RetrofitInstance
+import com.example.studentplacementandroidapp.model.DBCompanyData
 import com.example.studentplacementandroidapp.model.DBStudentDataResult
 import retrofit2.http.Query
 
@@ -10,7 +11,7 @@ class Repository {
         return RetrofitInstance.api.getStudentData()
     }
 
-    suspend fun getCompanyData() : DBStudentDataResult{
+    suspend fun getCompanyData() : DBCompanyData {
         return RetrofitInstance.api.getCompanyData()
     }
 

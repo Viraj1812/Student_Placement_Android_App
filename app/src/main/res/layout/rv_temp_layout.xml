@@ -2,7 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -25,7 +28,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/studentName"
+                    android:id="@+id/Date"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -36,6 +39,7 @@
                     android:layout_marginStart="@dimen/_5sdp"/>
 
                 <ImageView
+                    android:id="@+id/save"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
                     android:src="@drawable/save_instagram_1"
@@ -46,6 +50,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/role"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Data Scientist"
@@ -55,6 +60,7 @@
                 android:layout_marginStart="@dimen/_5sdp"/>
 
             <TextView
+                android:id="@+id/companyName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Celebal Technologies Pvt Ltd."
@@ -64,6 +70,7 @@
                 android:layout_marginStart="@dimen/_5sdp"/>
 
             <TextView
+                android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ahmedabad,Gujarat(On-Site)"
