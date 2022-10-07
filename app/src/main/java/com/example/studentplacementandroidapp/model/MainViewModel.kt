@@ -8,9 +8,10 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(private val repository: Repository) : ViewModel() {
 
-    private val myResponseOfStudentData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
-    private val myResponseOfCompanyData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
-    private val myResponseOfStudentSaveCompanyData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
+    val myResponseOfStudentData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
+    val myResponseOfCompanyData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
+    val myResponseOfStudentSaveCompanyData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
+    val myResponseOfStudentSaveData: MutableLiveData<DBStudentDataResult> = MutableLiveData()
 
     fun getStudentData(uniqueToken : String){
         viewModelScope.launch {
@@ -21,16 +22,22 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
 
     fun getCompanyData(){
         viewModelScope.launch {
-            val response: DBStudentDataResult = repository.getStudentData()
+            val response: DBStudentDataResult = repository.getCompanyData()
             myResponseOfCompanyData.value = response
         }
     }
 
     fun getStudentSaveCompanyData(uniqueToken : String){
         viewModelScope.launch {
-            val response: DBStudentDataResult = repository.getStudentData()
+            val response: DBStudentDataResult = repository.getStudentSaveCompanyData()
             myResponseOfStudentSaveCompanyData.value = response
         }
     }
 
+    fun getStudentSaveData(){
+        viewModelScope.launch {
+            val response: DBStudentDataResult = repository.getStudentSaveData()
+            myResponseOfStudentSaveData.value = response
+        }
+    }
 }

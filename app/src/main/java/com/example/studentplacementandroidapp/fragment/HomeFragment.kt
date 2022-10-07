@@ -29,6 +29,11 @@ class HomeFragment : Fragment() {
         val viewModelFactory = MainViewModelFactory(repository)
         viewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
 
+        /*viewModel.getStudentSaveData()
+        viewModel.myResponseOfStudentSaveData.observe(viewLifecycleOwner) {
+            val x = it.firstName
+            binding.studentName.text = x
+        }*/
 
         return binding.root
     }
