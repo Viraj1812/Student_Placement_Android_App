@@ -15,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.signInCard.setOnClickListener{
-            val intent = Intent(this@LoginActivity,RegistrationActivity::class.java)
+            val intent = Intent(this@LoginActivity,MainActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,6 +1,6 @@
 package com.example.studentplacementandroidapp.model
 
-data class DBStudentDataResult(
+data class DBEditedStudentDataResult(
     val id: String,
     val first_name: String,
     val last_name: String,

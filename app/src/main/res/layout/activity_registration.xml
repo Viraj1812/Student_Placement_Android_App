@@ -50,6 +50,7 @@
 
 
         <EditText
+            android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -65,6 +66,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/lastName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -80,6 +82,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/studentId"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -95,6 +98,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -110,6 +114,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/mobileNumber"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -118,13 +123,15 @@
             android:fontFamily="@font/inter_regular"
             android:hint="@string/mobile_number"
             android:textColorHint="#9FA1AA"
+            android:text="@null"
+            android:inputType="phone"
             android:backgroundTint="#9FA1AA"
             android:importantForAutofill="no"
-            android:inputType="text"
             android:padding="@dimen/_3sdp"
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:backgroundTint="#9FA1AA"
@@ -140,6 +147,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/department"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:backgroundTint="#9FA1AA"
@@ -173,6 +181,7 @@
         tools:ignore="UselessParent">
 
         <EditText
+            android:id="@+id/tenthPercentage"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -188,6 +197,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/twelthPercentage"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -203,6 +213,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/diplomaCGPA"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -218,6 +229,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/currentCGPA"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
@@ -233,6 +245,7 @@
             android:textColor="#9FA1AA" />
 
         <EditText
+            android:id="@+id/domain"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginStart="@dimen/_5sdp"
